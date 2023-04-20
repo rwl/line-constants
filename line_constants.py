@@ -177,7 +177,7 @@ def carsons(type, h_i, h_k, x_ik, f, rho, err_tol=1e-6):
             Rp = Rp - di * acosphi
             Xp = Xp - bi * ((ci - np.log(a)) * acosphi + phi * asinphi)
         
-        i = i = 1
+        i = i + 1
         err = np.sqrt((Rp - Rp_prev) **2 + (Xp - Xp_prev)**2)
         
     Rp = 4 * omega * 1e-04 * Rp
